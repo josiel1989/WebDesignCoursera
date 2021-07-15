@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+}
+h1{
+    font-size: 1.75em;
+    text-align: center;
+    margin-top: 10px;
+}
+.contenedor{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fila > *{
+    width: 100%;
+    padding: 20px;
+}
+.fila section div{
+    border: solid 1px #000000;
+    background-color: #54e5f0;
+    position: relative;
+}
+.fila section div h2{
+    position:absolute;
+    top: 0;
+    right: 0;
+    border: solid 1px #000000;
+    border-top: none;
+    border-right: none;
+    width: calc(100%/3);
+    font-size: 1.25em;
+    text-align: center;
+}
+.fila section div p{
+    padding: 10px;
+    padding-top: 40px;
+}
+section:nth-of-type(1) h2{
+    background-color: #ffc0cb;
+}
+section:nth-of-type(2) h2{
+    background-color: #7e1010;
+    color: #ffffff;
+}
+section:nth-of-type(3) h2{
+    background-color: #a0a00b;
+}
+
+@media (min-width: 768px) {
+    .tablet-4col{
+        width: calc(100%/3);
+    }
+    .tablet-6col{
+        width: 50%;
+    }
+    .tablet-12col{
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .desktop-4col{
+        width: calc(100%/3);
+    }
+    .desktop-6col{
+        width: 50%;
+    }
+    .desktop-12col{
+        width: 100%;
+    }
+}
