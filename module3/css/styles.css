@@ -1,0 +1,15 @@
+button.navbar-toggler{
+    background-color: #ff7f50;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+p{
+    background-color: #ebe7e7;
+}
+
+@media (max-width: 575px){
+    .container{
+        width: 90%;
+    }
+}
